@@ -11,6 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160326062456) do
+
+  create_table "warriors", force: true do |t|
+    t.string   "name",                   null: false
+    t.integer  "attack",     default: 5, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
