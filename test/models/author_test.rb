@@ -1,17 +1,18 @@
 # == Schema Information
 #
-# Table name: warriors
+# Table name: authors
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)      not null
-#  attack     :integer          default(5), not null
+#  name       :string(255)
+#  bio        :text
+#  status     :integer          default(1)
 #  created_at :datetime
 #  updated_at :datetime
 #
 
 require 'test_helper'
 
-class WarriorTest < ActiveSupport::TestCase
+class AuthorTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
